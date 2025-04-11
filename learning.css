@@ -1,0 +1,114 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px 30px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: rgba(255, 165, 0, 0.15);
+  color: #ffa500;
+}
+
+/* Learning Outcomes Container */
+.learning-outcomes-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.learning-outcomes-container h1 {
+  text-align: center;
+  font-size: 2.7rem;
+  color: #ffa500;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 6px rgba(255, 165, 0, 0.3);
+}
+
+/* Week Sections */
+.learning-week {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.learning-week:hover {
+  transform: translateY(-5px);
+}
+
+.learning-week h2 {
+  color: #00bcd4;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Bulleted Points */
+.learning-points {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #ddd;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .learning-outcomes-container {
+    padding: 10px;
+  }
+
+  .learning-week h2 {
+    font-size: 1.4rem;
+  }
+
+  .learning-points {
+    font-size: 1rem;
+  }
+}
